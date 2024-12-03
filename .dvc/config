@@ -1,0 +1,4 @@
+[core]
+    remote = origin
+['remote "origin"']
+    url = ../git@dagshub.com:KazemZh/examen-dvc.git
