@@ -16,7 +16,7 @@ def train_model(input_dir, params_path, output_path):
     with open(params_path, "rb") as f:
         best_params = pickle.load(f)
 
-    # Train the model
+    # Train the model using the best parameters
     model = GradientBoostingRegressor(**best_params, random_state=42)
     model.fit(X_train, y_train.values.ravel())
 
